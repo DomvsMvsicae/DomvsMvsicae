@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="Title" content="Domus Musicae" />
+    <meta name="Description" content="///" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="CSS/Main.css" />
+    <link rel="stylesheet" media="screen and (max-width:1050px)" href="CSS/MobileCSS/MobileMain.css"/>
+    <script src="JS/Main.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <!--NAVBAR-->
+      <nav id="navbar">
+        <div class="container">
+          <div class="PNGLogo">
+            <img src="Images/Logo_nav.png" />
+          </div>
+          <div class="navButton">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-btn" onclick="openNav()">&#9776;</label>
+          </div>
+        </div>
+      </nav>
+
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul>
+          <li>
+            <div class="sidenavItem">
+              <img src="Images/HomeIcon.png" />
+              <a href="Index.html">Home</a>
+            </div>
+          </li>
+          <li>
+            <div class="sidenavItem">
+              <img src="Images/ConcertsIcon.png" />
+              <a href="Concerts.html">Concerti</a>
+            </div>
+          </li>
+          <li>
+            <div class="sidenavItem">
+              <img src="Images/MusicIcon.png" />
+              <a href="MusicArchive.html">Archivio Musicale</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <div class="emptyDiv"></div>
+      <!--IMAGESLIDER SECTION-->
+      <section id="SlideShow">
+        <div class="sliderContainer">
+          <img class="MainLogo" src="Images/Logo.png">
+        </div>
+      </section>
+
+      <section id="MainContent">
+        <div class="DivBlock">
+          <div class="LeftDiv">
+            <div class="ImageDiv">
+              <img class="NextConcertFlyer" src="Images/NextConcert.png">
+            </div>
+            <div class="containerDiv">
+              <div class="DatesDiv">
+                <hr class="MediumHR">
+                <h1>Concerti della sessione estiva</h1>
+                  <hr class="MediumHR">
+                  <p>Le date non sono ancora state confermate, nuove informazioni saranno presto disponibili.</p>
+                  <!--
+                  <p>- 22 Dicembre 2023:</p>
+                  <p>Sala polifuzionale Tommaso Da Rin - Laggio di Cadore</p>
+                  <hr class="SmallHR">
+                  <p>- 26 Dicembre 2023:</p>
+                  <p>Centro Sociale di Fregona</p>
+                  <hr class="SmallHR"> -->
+              </div>
+              <div class="CalendarDiv">
+                <img class="CalendarImage" src="Images/CalendarIcon.png">
+                <h1>Calendario dei concerti</h1>
+                <hr class="SmallHR">
+                <p style="text-align: center;">Iscriviti al calendario dei concerti per ricevere direttamente sul tuo calendario personale i prossimi appuntamenti. Sarete notificati per ogni data stabilita con informazioni su luogo ed ora.</p>
+                <hr class="MediumHR">
+                <div class="CalendarSubscription">
+                  <div class="SubscribeButton"  onclick="subscribeToCalendar()">
+                    <p>Iscriviti</p>
+                  </div>
+                </div>
+                <hr class="MediumHR">
+              </div>
+            </div>
+          </div>
+        
+          <div class="RightDiv">
+            <div class="ConcertBookLeft">
+              <hr class="MediumHR">
+              <h1>RECITAL DI PIANOFORTE - ESTATE 2024</h1>
+              <hr class="SmallHR">
+              <p>Una guida completa al programma del concerto, all'autore ed alle sue opere è dsponibile nell'archivio.</p>
+              <hr class="MediumHR">
+              <div class="GuideButton">
+                <div class="LinkButton" onclick="openPage('Archive/RecitalArchive/Recital_Estate_2024.html')">
+                  <p>Apri la guida</p>
+                </div>
+              </div>
+              <hr class="MediumHR">
+              <h1>Introduzione al concerto</h1>
+              <hr class="SmallHR">
+              <p>Tutto ciò che accade nell'insieme è evoluzione, eterno divenire e perire. Eppure la natura sembra voler sfuggire a questo ciclo; cerca di dominare la morte creando generazioni sempre nuove, nuove specie di formazione superiore. Anche l'uomo, “così familiare nella sua grazia con tutta la bellezza che contempla, svanisce e si dissolve”. Ma come se l'anima portasse ancora dentro di sé la memoria indebolita di una patria lontana e perduta, lo spirito si mette in cammino, cerca qualcosa oltre la morte; e in questa nostalgia dell'eternità, crea valori religiosi, spirituali, artistici, li irradia al suo entourage e ai suoi posteri e perdura così oltre il suo breve passaggio su questa terra.</p>
+              <hr class="SmallHR">
+              <p>Come uomini, plasmiamo i nostri corpi e li esercitiamo in uno strumento adatto, uno strumento docile alla nostra volontà; come musicisti, lavoriamo sulla nostra tecnica, sulle nostre capacità, sulla nostra scienza. Impariamo i movimenti delle dita, delle mani, delle braccia, impariamo a leggere le note, alleniamo il senso del ritmo, rafforziamo la memoria, ascoltiamo artisti e dischi, confrontiamo edizioni, riceviamo musica alla radio. Ma tutto questo non è l’essenziale, il segreto ultimo è la vita che è in definitiva l’eterno generatore.</p>
+              <hr class="SmallHR">
+              <p>Gli organi di percezione di questi segreti ultimi nell'uomo meravigliosamente costruito sono accuratamente nascosti e per la maggior parte del tempo fuori uso. Il ricevitore in noi di questo quadrante infinitamente suddiviso solo raramente è sintonizzato sull'onda che conduce all'essenziale delle cose. Si tratta allora di riprendersi, di liberarsi di tutto il rumore del mondo. All'improvviso ci arriva un suono, una parola, il richiamo di un uccello, uno sguardo, un gesto della mano, e lì c'è la comunicazione, la rivelazione. L'artista è colui che ha l'organo per le innumerevoli e sempre nuove varianti che nascono dai temi eterni della natura.</p>
+              <hr class="SmallHR">
+              <p>L'arte è quindi un riflesso smaterializzato della vita divina.</p>
+              <hr class="SmallHR">
+              <p1>Edwin Fischer - Considerazioni sulla musica</p1>
+              <hr class="SmallHR">
+            </div>
+            <div class="ConcertBookRight">
+              <hr class="MediumHR">
+              <h1>Programma del concerto</h1>
+              <h2 style="text-align: center;">Opere di Ludwig van Beethoven</h2>
+              <hr class="SmallHR">
+              <h2>Sonata per pianoforte n°8 "Grande Sonata Patetica"</h2>
+                <h2 style="font-weight: normal;"> Ludwing van Beethoven</h2>
+                <hr class="SmallHR">
+                <p>La sonata per pianoforte n°8 Op. 13 in Do minore è anche nota con il titolo di Grande Sonata Patetica. Questo appellativo non fu dato da Beethoven ma dal suo editore, il compositore tuttavia lo riconoscerà come esatto riferendosi al termine “Patetico” così come definito dal poeta Friedrich von Schiller che lo legava al concetto di “Grande Anima”.</p>
+                <hr class="SmallHR">
+                <p>La sonata fu composta nel 1798 e pubblicata nel Dicembre del 1799.</p>             
+                <hr class="SmallHR">
+                <div class="MusicPieceBlock" onclick="openPage('Archive/MusicArchive/Beethoven_GrandeSonataPatetica.html')">
+                  <img class="MusicPieceIcon" src="./Images/MusicPieceIcon.png" />
+                <div>
+                  <h3>Sonata per pianoforte n°8 "Grande Sonata Patetica"</h3>
+                  <p2>Ludwig van Beethoven</p2>
+                </div>
+                </div>
+                <hr class="SmallHR">
+              <h2>Sonata per pianoforte n°14 "Quasi una fantasia"</h2>
+                <h2 style="font-weight: normal;"> Ludwing van Beethoven</h2>
+                <hr class="SmallHR">
+                <p>La sonata n°14 "Quasi una fantasia" fu scritta nel 1801 e dedicata alla contessa Giulietta Guacciardi. Il titolo "Sonata al chiaro di luna" fu inventato dal poeta Ludwig Rellstab e non rispecchia l'idea originale del compositore.</p>
+                <hr class="SmallHR">
+                <p>Possiamo dire che quest'opera costituisce un'unità perfetta che è emersa da un sentimento molto profondo ed intimo.</p>
+                <hr class="SmallHR">
+                <div class="MusicPieceBlock" onclick="openPage('Archive/MusicArchive/Beethoven_Quasi_Una_Fantasia.html')">
+                  <img class="MusicPieceIcon" src="./Images/MusicPieceIcon.png" />
+                <div>
+                  <h3>Sonata per pianoforte n°14 "Quasi una fantasia"</h3>
+                  <p2>Ludwig van Beethoven</p2>
+                </div>
+                </div>
+                <hr class="SmallHR">
+                <h2>Sonata per pianoforte n°23 "Appassionata"</h2>
+                  <h2 style="font-weight: normal;"> Ludwing van Beethoven</h2>
+                  <hr class="SmallHR">
+                  <p>Beethoven scrisse 32 sonate per pianoforte. L’Appassionata fu scritta fra il 1804 ed il 1805 e dedicata al conte Franz von Brunswick, amico del compositore. Il titolo non fu dato da Beethoven stesso ma venne attribuito dall’editore Cranz di Amburgo e dicono accettato dall’autore.</p>
+                  <hr class="SmallHR">
+                  <p>Nel 1822, durante un incontro fra amici, fu chiesto a Beethoven il significato della sonata ed egli rispose “leggete la Tempesta di Shakespeare“.</p>
+                  <hr class="SmallHR">
+                  <p>L’appassionata, che segna la fine di un’epoca nella produzione per piano di Beethoven, fu la preferita dell’autore fra le ultime cinque da lui scritte.</p>
+                  <hr class="SmallHR">
+                  <div class="MusicPieceBlock" onclick="openPage('Archive/MusicArchive/Beethoven_Appassionata.html')">
+                    <img class="MusicPieceIcon" src="./Images/MusicPieceIcon.png" />
+                  <div>
+                    <h3>Sonata per pianoforte n°23 "Appassionata"</h3>
+                    <p2>Ludwig van Beethoven</p2>
+                  </div>
+                </div>
+                <hr class="SmallHR">
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div id="footercontainer">
+        <h1 class="CopyRight">DOMUS MUSICAE</h1>
+      </div>
+    </footer>
+  </body>
+</html>

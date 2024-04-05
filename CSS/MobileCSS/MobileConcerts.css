@@ -1,0 +1,396 @@
+* {
+  margin: 0;
+  padding: 0; 
+}
+
+html, body {
+  font-family: system-ui;
+  width:100%;
+  height: 100%;
+  padding:0;
+  margin:0px;
+}
+
+#navbar, #navbar ul, #navbar li, #navbar a {
+  font-family: system-ui;
+}
+
+body::after{
+  /*HIDE IMAGES*/
+  position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+  /*PRELOAD IMAGES*/
+  content:url("../Images/TM1411062RID.jpg") url("../Images/TM1809010.jpg") url("../Images/TM1905158.jpg") url("../Images/TM1905203.jpg") url("../Images/TM1809038.jpg");
+}
+
+/*SCROLLBAR SETTINGS---------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+::-webkit-scrollbar {
+  display:none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+/*---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+
+/*NAVBAR---------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+#navbar {
+  background:rgba(34, 34, 34, 0.9);
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
+  width:100%;
+  height:48px;
+  position:fixed;
+  overflow:hidden;
+  z-index: 1;
+}
+
+#navbar .container {
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  display: flex;
+}
+
+#navbar .container .PNGLogo {
+  display:flex;
+  justify-content: left;
+  height:32px;
+  width:100px;
+  margin-left: 8px;
+}
+
+#navbar .container .PNGLogo img {
+  max-width: 250px;
+  max-height: 40px;
+}
+
+#navbar .container .navButton
+{
+  display:flex;
+  justify-content: right;
+  height:40px;
+  width:40px;
+  margin-left: 15px;
+}
+
+#navbar #menu-toggle
+{
+  display: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+#navbar .menu-btn
+{
+  font-size: 25px;
+  cursor:pointer;
+  padding: 2px 15px 5px 5px;
+  user-select: none;
+  color: white;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+#sidenav {
+  font-family: system-ui;
+  display: flex;
+  background: rgba(34, 34, 34, 0.9);
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: width 0.5s ease, -webkit-backdrop-filter 0.5s ease, backdrop-filter 0.5s ease;
+}
+
+.blur {
+  /* Blur effect styles */
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
+}
+
+@media screen and (max-height: 450px) {
+  #sidenav  {padding-top: 15px;}
+  #sidenav  a {font-size: 18px;}
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0px;
+  right: 12px;
+  font-size: 40px;
+  color: white;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.sidenav ul {
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+  padding-right: 8px;
+  list-style-type:none;
+}
+
+.sidenav .ul .li 
+{
+  display: list-item;
+  list-style-position: inside;
+  width: 100%;
+}
+
+.sidenav .sidenavItem
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.sidenav .sidenavItem img {
+  max-width: 25px;
+  max-height: 25px;
+  padding-left: 5px;
+}
+
+.sidenav .sidenavItem  a {
+    padding: 15px;
+    width: 100%;
+    display: block;
+    color: white;
+    user-select: none;
+    text-decoration: none;
+
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -moz-user-select:none;
+    -ms-use-select:none;
+    user-select:none;
+}
+
+.sidenav .sidenavItem:hover, #sidenav .sidenavItem.current {
+    background: rgba(80, 80, 80, 0.6);
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    color:white;
+}
+
+.sidenav .sidenavItem:active, #sidenav .sidenavItem.current {
+    background: rgba(131, 131, 131, 0.6);
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    color:white;
+}
+
+.sidenav .sidenavItem:active, #sidenav .sidenavItem.current {
+  background: rgba(131, 131, 131, 0.6);
+  color:white;
+}
+
+.emptyDiv {
+  display: flex;
+  width: 100%;
+  height: 48px;
+  background-color: white;
+}
+
+/*---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+
+/*LastConcertSection---------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+#ConcertSection {
+  position: static;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  width: 100%;
+  height: calc(100% - 58px);
+  background-color: rgb(221, 221, 221);
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-radius: 5px;
+  -moz-box-shadow: 0 0 5px #333333;
+  -webkit-box-shadow:0 0 5px #333333;
+  box-shadow: 0 0 5px #333333;
+}
+
+#ConcertSection .SectionTitle
+{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: flex-start;
+  width:100%;
+  height: auto;
+  margin: 0px 0px 0px 0px;
+  background-color: rgb(184, 184, 184);
+}
+
+#ConcertSection h1 {
+  text-align: left;
+  font-size: xx-large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0px 15px 0px 15px;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -moz-user-select:none;
+  -ms-use-select:none;
+  user-select:none;
+}
+
+#ConcertSection h2 {
+  text-align: left;
+  font-size: x-large;
+  font-weight: normal;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0px 15px 0px 15px;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -moz-user-select:none;
+  -ms-use-select:none;
+  user-select:none;
+}
+
+#ConcertSection h3{
+  text-align: left;
+  font-size: large;
+  font-weight: normal;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0px 20px 0px 10px;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -moz-user-select:none;
+  -ms-use-select:none;
+  user-select:none;
+}
+
+#ConcertSection p
+{
+  text-align: left;
+  font-size: medium;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0px 10px 0px 10px;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -moz-user-select:none;
+  -ms-use-select:none;
+  user-select:none;
+}
+
+#ConcertSection .SectionTitle .SmallHR {
+  border:none;
+  background-color: rgb(184, 184, 184);
+  color: rgb(184, 184, 184);
+  height: 10px;
+  width: 100%;
+}
+
+#ConcertSection .SectionTitle .MediumHR {
+  border:none;
+  background-color: rgb(184, 184, 184);
+  color: rgb(184, 184, 184);
+  height: 20px;
+  width: 100%;
+}
+
+#ConcertSection .MusicPieceList .SmallHR {
+  border:none;
+  background-color: rgb(221, 221, 221);
+  color: rgb(221, 221, 221);
+  height: 10px;
+  width: 100%;
+}
+
+#ConcertSection .MusicPieceList .MediumHR {
+  border:none;
+  background-color: rgb(221, 221, 221);
+  color: rgb(221, 221, 221);
+  height: 20px;
+  width: 100%;
+}
+
+#ConcertSection .MusicPieceList 
+{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: auto;
+}
+
+#ConcertSection .MusicPieceList .MusicPieceBlock
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: calc(100% - 10px);
+  height: 12vh;
+  margin: 5px 5px 5px 5px;
+}
+
+#ConcertSection .MusicPieceList .MusicPieceBlock:hover
+{
+  background-color: rgb(184, 184, 184);
+  border-radius: 25px;
+  color: rgb(0, 0, 0);
+}
+
+#ConcertSection .MusicPieceList .MusicPieceBlock:active
+{
+  background-color: rgb(153, 153, 153);
+  border-radius: 25px;
+  color: rgb(0, 0, 0);
+}
+
+#ConcertSection .MusicPieceList .MusicPieceBlock .MusicPieceIcon
+{
+  width: auto;
+  height: 80%;
+  object-fit: contain;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 15px;
+}
+
+#ConcertSection .MusicPieceList .FillSpace
+{
+  width: 100%;
+  height: 45px;
+  background-color: rgb(221, 221, 221);
+  color: rgb(221, 221, 221);
+}
+
+/*---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+
+
+/*footer---------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+
+#footercontainer {
+    width: 100%;
+    height: 34px;
+    display:flex;
+    flex:1;
+    align-items: center;
+    justify-content: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background:rgba(34, 34, 34, 0.9);
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-use-select: none;
+    user-select: none;
+}
+
+#footercontainer h1 {
+    color:white;
+    font-size:20px;
+}
+
+/*---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/

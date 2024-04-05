@@ -1,0 +1,639 @@
+html, body {
+  font-family: system-ui;
+  width:100%;
+  height: 100%;
+  padding:0;
+  margin:0px;
+}
+
+#navbar, #navbar ul, #navbar li, #navbar a {
+  font-family: system-ui;
+}
+
+/*SCROLLBAR SETTINGS---------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+::-webkit-scrollbar {
+  display:none;
+}
+/*---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+
+/*NAVBAR---------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+#navbar {
+  background: rgba(34, 34, 34, 0.9);
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
+  width: 100vw;
+  position: fixed;
+  overflow: hidden;
+  z-index: 1;
+}
+
+#navbar .container {
+  justify-content: space-between;
+  align-items: center;
+  vertical-align: middle;
+  display: flex;
+  width:100%;
+  height:48px;
+}  
+
+#navbar .container .PNGLogo img {
+  max-width: 225px;
+  max-height: 48px;
+}
+
+#navbar .container ul li a {
+  padding: 5px;
+  display: block;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-use-select: none;
+  user-select: none;
+}
+
+/*Main-----------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0; 
+}
+
+html, body {
+  font-family: font-family 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width:100%;
+  height: 100%;
+  padding:0;
+  margin:0px;
+}
+
+#navbar, #navbar ul, #navbar li, #navbar a {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*SCROLLBAR SETTINGS---------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #555;
+}
+
+::-webkit-scrollbar-thumb {
+  background: white;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+/*---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+
+/*NAVBAR---------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+#navbar {
+  background:rgba(34, 34, 34, 0.9);
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
+  width:100%;
+  height:48px;
+  position:fixed;
+  overflow:hidden;
+  z-index: 1;
+}
+
+#navbar .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  display: flex;
+}
+
+#navbar .container .PNGLogo {
+  display:flex;
+  justify-content: left;
+  height:32px;
+  width:100px;
+  margin-left: 8px;
+}
+
+#navbar .container .PNGLogo img {
+  max-width: 250px;
+  max-height: 40px;
+}
+
+#navbar .container .navButton
+{
+  display:flex;
+  justify-content: right;
+  height:40px;
+  width:40px;
+  margin-left: 15px;
+}
+
+#navbar #menu-toggle
+{
+  display: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+#navbar .menu-btn
+{
+  font-size: 25px;
+  cursor:pointer;
+  padding: 2px 15px 5px 5px;
+  user-select: none;
+  color: white;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+#sidenav {
+  font-family: system-ui;
+  display: flex;
+  background: rgba(34, 34, 34, 0.9);
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: width 0.5s ease, -webkit-backdrop-filter 0.5s ease, backdrop-filter 0.5s ease;
+}
+
+.blur {
+  /* Blur effect styles */
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
+}
+
+@media screen and (max-height: 450px) {
+  #sidenav {padding-top: 15px;}
+  #sidenav a {font-size: 18px;}
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0px;
+  right: 12px;
+  font-size: 40px;
+  color: white;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.sidenav ul {
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+  padding-right: 8px;
+  list-style-type:none;
+}
+
+.sidenav .ul .li 
+{
+  display: list-item;
+  list-style-position: inside;
+  width: 100%;
+}
+
+.sidenav .sidenavItem
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.sidenav .sidenavItem img {
+  max-width: 25px;
+  max-height: 25px;
+  padding-left: 10px;
+}
+
+.sidenav .sidenavItem  a {
+    padding: 15px;
+    width: 100%;
+    display: block;
+    color: white;
+    user-select: none;
+    text-decoration: none;
+
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -moz-user-select:none;
+    -ms-use-select:none;
+    user-select:none;
+}
+
+.sidenav .sidenavItem:hover, #sidenav .sidenavItem.current {
+    background: rgba(80, 80, 80, 0.6);
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    color:white;
+}
+
+.sidenav .sidenavItem:active, #sidenav .sidenavItem.current {
+    background: rgba(131, 131, 131, 0.6);
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    color:white;
+}
+
+/*main-----------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+.emptyDiv {
+  width: 100%;
+  height: 48px;
+}
+
+#InfoContainer0 {
+  width: 100%;
+  height: auto;
+}
+
+#InfoContainer0 .DivBlock {
+  display: flex;
+  flex-direction: column-reverse;
+  width:100%;
+  height: 100%;
+  margin: 0px 0px 0px 0px;
+}
+
+#InfoContainer0 .DivBlockVariant {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:100%;
+  height: 100%;
+  margin: 0px 0px 0px 0px;
+}
+
+#InfoContainer0 .DivBlock .ImageContainer
+{
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0px 0px 0px;
+}
+
+#InfoContainer0 .DivBlock .ImageContainer .LeftImage {
+  display:block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  -moz-box-shadow: 0 0 5px #333333;
+  -webkit-box-shadow:0 0 5px #333333;
+  box-shadow: 0 0 5px #333333;
+}
+
+#InfoContainer0 .DivBlockVariant .ImageContainer
+{
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0px 0px 0px;
+  background-image: none;
+}
+
+#InfoContainer0 .DivBlockVariant .ImageContainer .LeftImage {
+  display:block;
+  width: 98%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  -moz-box-shadow: 0 0 5px #333333;
+  -webkit-box-shadow:0 0 5px #333333;
+  box-shadow: 0 0 5px #333333;
+}
+
+
+#InfoContainer0 .RightDiv {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 10px 0px 0px 0px;
+  -moz-box-shadow: 0 0 5px #333333;
+  -webkit-box-shadow:0 0 5px #333333;
+  box-shadow: 0 0 5px #333333;
+}
+
+#InfoContainer0 .RightDiv .TextDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: top;
+  justify-content:center;
+  width:90%;
+  height: auto;
+  padding: 10px 10px 10px 10px;
+}
+
+#InfoContainer0 .RightDiv .TextDiv h1 {
+  text-align: center;
+  font-size: xx-large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#InfoContainer0 .RightDiv .TextDiv h2 {
+  text-align: left;
+  font-size: x-large;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#InfoContainer0 .RightDiv .TextDiv p {
+  text-align: justify;
+  font-size: large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#InfoContainer0 .RightDiv .TextDiv p1 {
+  text-align: right;
+  font-size: large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: gray;
+}
+
+#InfoContainer0 .RightDiv .TextDiv .SmallHR {
+  border:none;
+  background-color: transparent;
+  color: rgb(194,202,214);
+  height: 5px;
+  width: 100%;
+}
+
+#InfoContainer0 .RightDiv .TextDiv .MediumHR {
+  border:none;
+  background-color: transparent;
+  color: rgb(194,202,214);
+  height: 10px;
+  width: 100%;
+}
+
+
+/*Info-----------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+#InfoContainer1 {
+  width: 100%;
+  height: auto;
+}
+
+#InfoContainer1 .DivBlock {
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  height: 100%;
+  margin: 0px 0px 0px 0px;
+}
+
+#InfoContainer1 .DivBlock .ImageContainer
+{
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0px 0px 0px;
+}
+
+#InfoContainer1 .DivBlock .ImageContainer .LeftImage {
+  display:block;
+  width: 98%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  -moz-box-shadow: 0 0 5px #333333;
+  -webkit-box-shadow:0 0 5px #333333;
+  box-shadow: 0 0 5px #333333;
+}
+
+#InfoContainer1 .DivBlock .RightDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:flex-start;
+  width: 100%;
+  height: auto;
+  background-color: rgb(221, 221, 221);
+  margin: 10px 0px 0px 0px;
+  -moz-box-shadow: 0 0 5px #333333;
+  -webkit-box-shadow:0 0 5px #333333;
+  box-shadow: 0 0 5px #333333;
+}
+
+#InfoContainer1 .DivBlock .RightDiv .TextDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: top;
+  justify-content:center;
+  width:90%;
+  height: auto;
+  padding: 10px 10px 10px 10px;
+}
+
+#InfoContainer1 .DivBlock .RightDiv .TextDiv h1 {
+  text-align: center;
+  font-size: xx-large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#InfoContainer1 .DivBlock .RightDiv .TextDiv h2 {
+  text-align: left;
+  font-size: x-large;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+#InfoContainer1 .DivBlock .RightDiv .TextDiv p {
+  text-align: justify;
+  font-size: large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#InfoContainer1 .DivBlock .RightDiv .TextDiv p1 {
+  text-align: right;
+  font-size: large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: gray;
+}
+
+#InfoContainer1 .DivBlock .RightDiv .TextDiv .SmallHR {
+  border:none;
+  background-color: transparent;
+  color: rgb(194,202,214);
+  height: 5px;
+  width: 100%;
+}
+
+#InfoContainer1 .DivBlock .RightDiv .TextDiv .MediumHR {
+  border:none;
+  background-color: transparent;
+  color: rgb(194,202,214);
+  height: 10px;
+  width: 100%;
+}
+
+/*---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+
+/*ConcertProgram-------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+
+#ConcertProgram
+{
+    width: 100%;
+    height: auto;
+}
+
+#ConcertProgram .ConcertProgramDiv
+{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height: 100%;
+    justify-content:flex-start;
+    background-color: rgb(194,202,214);
+    border-radius: 5px;
+    margin: 10px 0px 10px 0px;
+    -moz-box-shadow: 0 0 5px #333333;
+    -webkit-box-shadow:0 0 5px #333333;
+    box-shadow: 0 0 5px #333333;
+}
+
+#ConcertProgram .SmallHR {
+    border:none;
+    background-color: transparent;
+    color: rgb(194,202,214);
+    height: 10px;
+    width: 100%;
+}
+
+#ConcertProgram .MediumHR {
+    border:none;
+    background-color: transparent;
+    color: rgb(194,202,214);
+    height: 20px;
+    width: 100%;
+}
+
+#ConcertProgram h1 {
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px 20px 0px 20px;
+}
+
+#ConcertProgram h2 {
+    text-align: left;
+    font-size: x-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px 20px 0px 20px;
+}
+
+#ConcertProgram h3
+{
+    text-align: left;
+    font-size: large;
+    font-weight: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px 20px 0px 20px;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -moz-user-select:none;
+    -ms-use-select:none;
+    user-select:none;
+}
+
+#ConcertProgram p {
+    text-align: left;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px 20px 0px 20px;
+}
+
+#ConcertProgram p2 {
+    text-align: left;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px 20px 0px 20px;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -moz-user-select:none;
+    -ms-use-select:none;
+    user-select:none;
+}
+
+#ConcertProgram .ConcertProgramDiv .MusicPieceBlock
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: calc(100% - 40px);
+  height: 12vh;
+  margin: 5px 20px 5px 20px;
+  border-radius: 25px;
+}
+
+#ConcertProgram .ConcertProgramDiv  .MusicPieceBlock:hover
+{
+  background-color: rgb(159, 169, 185);
+  color: rgb(0, 0, 0);
+}
+
+#ConcertProgram .ConcertProgramDiv  .MusicPieceBlock:active
+{
+  background-color: rgb(149, 159, 173);
+  color: rgb(0, 0, 0);
+}
+
+#ConcertProgram .ConcertProgramDiv  .MusicPieceBlock .MusicPieceIcon
+{
+  width: auto;
+  height: 80%;
+  object-fit: contain;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 15px;
+}
+
+/*---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+
+/*footer---------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+
+#footercontainer {
+  width: 100%;
+  height: 34px;
+  display:flex;
+  flex:1;
+  align-items: center;
+  justify-content: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background:rgba(34, 34, 34, 0.9);
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-use-select: none;
+  user-select: none;
+}
+
+#footercontainer h1 {
+  color:white;
+  font-size:20px;
+}
+
+/*---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
