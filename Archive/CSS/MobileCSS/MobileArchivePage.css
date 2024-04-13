@@ -276,7 +276,7 @@ html, body {
 #InfoContainer0 .DivBlock .ImageContainer
 {
   display: flex;
-  width: 98%;
+  width: 100%;
   height: auto;
   align-items: center;
   justify-content: center;
@@ -285,7 +285,7 @@ html, body {
 
 #InfoContainer0 .DivBlock .ImageContainer .LeftImage {
   display:block;
-  width: 100%;
+  width: 98%;
   height: auto;
   object-fit: cover;
   border-radius: 5px;
