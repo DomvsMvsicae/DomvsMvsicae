@@ -30,6 +30,6 @@ function openPage(pageUrl)
 }
 
 function subscribeToCalendar() {
-    var subscriptionLink = "https://forms.gle/5mx21KktoTHbh45N9";
+    var subscriptionLink = "https://calendar.google.com/calendar/u/0?cid=ZDVkMWQxZWJkZmE3MTUyMTgyMzUwZDYxODg2YWI0MzNjOTFjNGY5OTc5Y2E5NzlmN2M0YWNiMzhjOGQwY2Q3OUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t";
     window.open(subscriptionLink, '_blank');
 }
