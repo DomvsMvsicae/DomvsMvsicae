@@ -366,7 +366,7 @@ body::after{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 150px;
+    width: 200px;
     height: 50px;
     border-radius: 5px;
     border-color:#333333;
@@ -404,7 +404,7 @@ body::after{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 150px;
+    width: 200px;
     height: 50px;
     border-radius: 5px;
     border-color:#333333;
