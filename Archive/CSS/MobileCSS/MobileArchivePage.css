@@ -244,6 +244,209 @@ html, body {
     color:white;
 }
 
+/* MusicPlayer ---------------------------------------------------------------- */
+/* --------------------------------------------------------------------------- */
+.hidden {
+  display: none;
+}
+
+.player {
+  max-width: 1000px;
+  margin: 0.25rem;
+  background: white;
+  padding: 15px;
+  border-radius: 14px;
+  box-shadow: 0 20px 25px -5px rgb(0 0, 0 / 0.1), 0 8px 10px -6px rgb(0 0, 0 / 0.1);
+}
+
+.player-track-meta {
+  text-align: center;
+}
+
+.player-track-meta p {
+  margin: 0;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+}
+
+.player-track-meta span {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0 2px;
+  position: relative;
+  top: 1px;
+  color: #000000;
+}
+
+.player-controls {
+  display: flex;
+  align-items: center;
+}
+
+.player-play-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+}
+
+.icon-container {
+  fill: transparent;
+  stroke: none;
+  color: rgb(149, 159, 173);
+}
+
+.player-play-btn:hover {
+  fill: rgb(149, 159, 173);
+}
+
+.player-play-btn svg {
+  color: rgb(149, 159, 173);
+  position: relative;
+  left: 0.5px;
+  width: 36px;
+  height: 36px;
+  display: block;
+}
+
+.player-play-btn:hover svg {
+  color: #ffffff;
+}
+
+.player-timeline {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+}
+
+.player-progress {
+  display: flex;
+  position: relative;
+  height: 6px;
+  background: #e7e7e7;
+  border-radius: 25px;
+  margin: 0 5px;
+  flex: 10;
+  overflow: hidden;
+}
+
+.player-progress-filled {
+  height: 6px;
+  background: rgb(149, 159, 173);
+  flex: 0;
+  flex-basis: 0%;
+  border-radius: 25px;
+}
+
+.player-time {
+  padding: 2px 5px;
+}
+
+.player-volume-container {
+  width: 15%;
+}
+
+/* Volume Slider Styles */
+.player-volume {
+  height: 28px;
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 100%;
+}
+
+/* Remove outline on focus */
+.player-volume:focus {
+  outline: none;
+}
+
+/* Webkit (Chrome, Safari) */
+.player-volume::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  background: linear-gradient(
+    to right,
+    rgb(149, 159, 173) var(--fill-percentage, 0%),
+    #e7e7e7 var(--fill-percentage, 0%)
+  );
+  border-radius: 10px;
+}
+
+.player-volume::-webkit-slider-thumb {
+  height: 16px;
+  width: 16px;
+  border-radius: 100px;
+  border: none;
+  background: rgb(149, 159, 173);
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -4px;
+}
+
+/* Firefox */
+.player-volume::-moz-range-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  background: linear-gradient(
+    to right,
+    rgb(149, 159, 173) var(--fill-percentage, 0%),
+    #e7e7e7 var(--fill-percentage, 0%)
+  );
+  border-radius: 10px;
+}
+
+.player-volume::-moz-range-thumb {
+  height: 16px;
+  width: 16px;
+  border-radius: 100px;
+  border: none;
+  background: rgb(149, 159, 173);
+  cursor: pointer;
+}
+
+/* Internet Explorer */
+.player-volume::-ms-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 6px 0;
+  color: transparent;
+}
+
+.player-volume::-ms-fill-lower {
+  background: rgb(149, 159, 173);
+  border-radius: 10px;
+}
+
+.player-volume::-ms-fill-upper {
+  background: black;
+  border-radius: 10px;
+}
+
+.player-volume::-ms-thumb {
+  margin-top: 1px;
+  height: 15px;
+  width: 15px; 
+  border-radius: 100px;
+  border: none;  
+  background: rgb(149, 159, 173);
+  cursor: pointer;
+}
+
+
+/*---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+
 /*main-----------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------*/
 .emptyDiv {
@@ -285,7 +488,7 @@ html, body {
 
 #InfoContainer0 .DivBlock .ImageContainer .LeftImage {
   display:block;
-  width: 98%;
+  width: 100%;
   height: auto;
   object-fit: cover;
   border-radius: 5px;
@@ -307,7 +510,7 @@ html, body {
 
 #InfoContainer0 .DivBlockVariant .ImageContainer .LeftImage {
   display:block;
-  width: 98%;
+  width: 100%;
   height: auto;
   object-fit: cover;
   border-radius: 5px;
@@ -407,7 +610,7 @@ html, body {
 
 #InfoContainer1 .DivBlock .ImageContainer .LeftImage {
   display:block;
-  width: 98%;
+  width: 100%;
   height: auto;
   object-fit: cover;
   border-radius: 5px;
@@ -483,6 +686,89 @@ html, body {
   width: 100%;
 }
 
+/*---------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+
+/*InfoContainer2-------------------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+#InfoContainer2 {
+  width: 100%;
+  height: auto;
+}
+
+#InfoContainer2 .DivBlock {
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  height: 100%;
+  margin: 0px 0px 0px 0px;
+}
+
+#InfoContainer2 .DivBlock .RightDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:flex-start;
+  width: 100%;
+  height: auto;
+  background-color: rgb(221, 221, 221);
+  margin: 10px 0px 0px 0px;
+  -moz-box-shadow: 0 0 5px #333333;
+  -webkit-box-shadow:0 0 5px #333333;
+  box-shadow: 0 0 5px #333333;
+}
+
+#InfoContainer2 .DivBlock .RightDiv .TextDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: top;
+  justify-content:center;
+  width:90%;
+  height: auto;
+  padding: 10px 10px 10px 10px;
+}
+
+#InfoContainer2 .DivBlock .RightDiv .TextDiv h1 {
+  text-align: center;
+  font-size: xx-large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#InfoContainer2 .DivBlock .RightDiv .TextDiv h2 {
+  text-align: left;
+  font-size: x-large;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#InfoContainer2 .DivBlock .RightDiv .TextDiv p {
+  text-align: justify;
+  font-size: large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#InfoContainer2 .DivBlock .RightDiv .TextDiv p1 {
+  text-align: right;
+  font-size: large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: gray;
+}
+
+#InfoContainer2 .DivBlock .RightDiv .TextDiv .SmallHR {
+  border:none;
+  background-color: transparent;
+  color: rgb(194,202,214);
+  height: 5px;
+  width: 100%;
+}
+
+#InfoContainer2 .DivBlock .RightDiv .TextDiv .MediumHR {
+  border:none;
+  background-color: transparent;
+  color: rgb(194,202,214);
+  height: 10px;
+  width: 100%;
+}
 /*---------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------*/
 

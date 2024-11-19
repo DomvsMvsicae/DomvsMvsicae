@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="CSS/Concerts.css" />
+    <link rel="stylesheet" media="screen and (max-width:1050px)" href="CSS/MobileCSS/MobileConcerts.css"/>
+</head>
+
+<body>
+  <header>
+    <!--NAVBAR-->
+    <nav id="navbar">
+      <div class="container">
+        <div class="PNGLogo">
+          <img src="Images/Logo_nav.png" />
+        </div>
+        <div class="navButton">
+          <input type="checkbox" id="menu-toggle">
+          <label for="menu-toggle" class="menu-btn" onclick="openNav()">&#9776;</label>
+        </div>
+      </div>
+    </nav>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <ul>
+        <li>
+          <div class="sidenavItem">
+            <img src="Images/HomeIcon.png" />
+            <a href="index.html">Home</a>
+          </div>
+        </li>
+        <li>
+          <div class="sidenavItem">
+            <img src="Images/ConcertsIcon.png" />
+            <a href="Concerts.html">Concerti</a>
+          </div>
+        </li>
+        <li>
+          <div class="sidenavItem">
+            <img src="Images/MusicIcon.png" />
+            <a href="MusicArchive.html">Archivio Musicale</a>
+          </div>
+        </li>
+        <li>
+          <div class="sidenavItem">
+            <img src="Images/ConferencesIcon.png" />
+            <a href="Conferences.html">Archivio Conferenze</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    
+  </header>
+
+    <main>
+        <div class="emptyDiv"></div>
+        <section id="ConcertSection">
+          <div class="SectionTitle">
+            <hr class="SmallHR">
+            <h1>Conferenze di Musica, Arte e Filosofia</h1>
+            <hr class="SmallHR">
+            <h2>Archivio delle conferenze:</h2>
+            <hr class="MediumHR">
+          </div>
+          <div class="MusicPieceList">
+            <div class="MusicPieceBlock" onclick="openPage('Archive/ConferenceArchive/Conferenza_FilosofiaDellaVita_Inverno_2024.html')">
+              <img class="MusicPieceIcon" src="./Images/ConferenceIcon.png" />
+              <div>
+                <h3>Conferenza - La Filosofia della Vita</h3>
+                <p>Inverno 2024</p>
+              </div>
+            </div>
+            <div class="fillSpace"><hr class="MediumHR"></div>
+          </div>
+        </section>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footercontainer">
+            <h1 class="CopyRight">DOMVS MVSICAE</h1>
+        </div>
+    </footer>
+</body>
+
+<!--Scripts-->
+<script src="JS/Main.js"></script>
+<script src="JS/Search.js"></script>
+
+</html>

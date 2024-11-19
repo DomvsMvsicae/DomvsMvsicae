@@ -46,6 +46,12 @@
               <a href="MusicArchive.html">Archivio Musicale</a>
             </div>
           </li>
+          <li>
+            <div class="sidenavItem">
+              <img src="Images/ConferencesIcon.png" />
+              <a href="Conferences.html">Archivio Conferenze</a>
+            </div>
+          </li>
         </ul>
       </div>
     </header>
@@ -60,15 +66,48 @@
       </section>
 
       <section id="MainContent">
-        <div class="DivBlock">
+        <div class="DivBlock" style="margin-top: 10px;">
           <div class="LeftDiv">
+            <div class="ImageDiv" style="background-image: url('Images/Conference_BG_Blur.jpeg');">
+              <img class="NextConcertFlyer" src="Images/NextConference.jpeg">
+            </div>
+            <div class="containerDiv">
+              <div class="DatesDiv">
+                <hr class="MediumHR">
+                <h1 style="width: 100%;">Conferenza</h1>
+                <h1 style="width: 100%;">"La Filosofia della Vita"</h1>
+                <hr class="SmallHR">
+                <p style="text-align: center;"><b>Cos'è la Filosofia, il suo posto nel mondo moderno e come recuperare la Conoscenza e la Sapienza perdute dei grandi Maestri</b></p>
+                <hr class="MediumHR">
+                <hr class="SmallHR">
+                <p>Nella nostra società moderna, ormai sottomessa unicamente al valore del denaro, schiava del materialismo e del consumismo che alimentano il fuoco del capitalismo occidentale, sono  stati da tempo persi i veri e grandi valori che per secoli hanno guidato i più grandi Maestri di Arte, Filosofia e Scienza del mondo intero.</p>
+                <hr class="SmallHR">
+                <p>In questo incontro con il musicista Gregory Goureschidze, organizzato nella meravigliosa località di Valmorel Limana, viene riproposta la ricerca di questi valori perduti tramite la lettura e la spiegazione di diversi testi dei più grandi Maestri di tutti i tempi.</p>
+                <hr class="SmallHR">
+                <p>Assieme a Gregory, esploreremo le opere e le riflessioni dei grandi pensatori che hanno segnato il cammino della nostra civiltà, fra cui Platone, Seneca, Johann Wolfgang von Goethe, Friedrich Schlegel, Arthur Schopenhauer, Radindranath Tagore, Carl Jung e tanti altri.</p>
+                <hr class="SmallHR">
+                <p>L'incontro offrirà una importante occasione di dialogo e riflessione collettiva, fra letture, spiegazioni e musica ci immergeremo in una dimensione intima che ci invita a riconnetterci con i valori essenziali capaci di nutrire l'anima e che ci permetteranno di riscoprire il grande valore del nostra ricca cultura classica.</p>              
+                <hr class="SmallHR">
+                <p>Una guida alla conferanza, contenente i brani principali che saranno letti e presentati dal maestro, è disponibile nell'archivio.</p>
+                <hr class="MediumHR">
+                <div class="GuideButton">
+                  <div class="LinkButton" style="width: 300px; background-color: rgb(117, 119, 80); border-color: rgb(94, 95, 66);" onclick="openPage('Archive/ConferenceArchive/Conferenza_FilosofiaDellaVita_Inverno_2024.html')">
+                    <p style="text-align: center;">Apri la guida della conferenza</p>
+                  </div>
+                </div>
+                <hr class="SmallHR">
+              </div>
+            </div>
+          </div>
+
+          <div class="LeftDiv" style="margin-top: 5px;">
             <div class="ImageDiv">
               <img class="NextConcertFlyer" src="Images/NextConcert.png">
             </div>
             <div class="containerDiv">
               <div class="DatesDiv">
                 <hr class="MediumHR">
-                <h1>Concerti della sessione estiva</h1>
+                <h1>Concerti della precedente sessione estiva</h1>
                   <hr class="MediumHR">
                   <!-- <p>Le date non sono ancora state confermate, nuove informazioni saranno presto disponibili.</p> -->
                   <hr class="SmallHR">
@@ -89,7 +128,7 @@
                 <img class="CalendarImage" src="Images/CalendarIcon.png">
                 <h1>Calendario dei concerti</h1>
                 <hr class="SmallHR">
-                <p>Iscriviti al calendario dei concerti per ricevere direttamente sul tuo calendario personale i prossimi appuntamenti. Sarete notificati per ogni data stabilita con informazioni su luogo ed ora.</p>
+                <p>Iscriviti al calendario dei concerti per ricevere direttamente sul tuo indirizzo email personale i prossimi appuntamenti. Sarete notificati per ogni data stabilita con informazioni su luogo ed ora.</p>
                 <hr class="MediumHR">
                 <div class="CalendarSubscription">
                   <div class="SubscribeButton"  onclick="subscribeToCalendar()">

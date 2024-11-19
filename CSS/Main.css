@@ -271,9 +271,10 @@ body::after{
 #MainContent .DivBlock .LeftDiv {
     display:flex;
     flex-direction: row;
-    align-items: center;
+    align-items: start;
     width: 98%;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     border-radius: 5px;
     background-color: rgb(221, 221, 221);
     margin: 0px 5px 5px 5px;
