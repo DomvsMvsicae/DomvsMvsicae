@@ -714,6 +714,41 @@ html, body {
   width: 100%;
 }
 
+#InfoContainer2 .DivBlock .RightDiv .TextDiv .LinkPieceBlock
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: calc(100%);
+  height: 12vh;
+  margin: 5px 0px 5px 0px;
+  border-radius: 25px;
+}
+
+#InfoContainer2 .DivBlock .RightDiv .TextDiv .LinkPieceBlock:hover
+{
+  background-color: rgb(159, 169, 185);
+  color: rgb(0, 0, 0);
+}
+
+#InfoContainer2 .DivBlock .RightDiv .TextDiv .LinkPieceBlock:active
+{
+  background-color: rgb(149, 159, 173);
+  color: rgb(0, 0, 0);
+}
+
+#InfoContainer2 .DivBlock .RightDiv .TextDiv .LinkPieceBlock .LinkIcon
+{
+  width: auto;
+  height: 80%;
+  object-fit: contain;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
 /*---------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------*/
 
