@@ -656,7 +656,7 @@ html, body {
   height: auto;
   background-color: rgb(221, 221, 221);
   border-radius: 5px;
-  margin:10px 5px 0px 10px;
+  margin:10px 10px 0px 10px;
   -moz-box-shadow: 0 0 5px #333333;
   -webkit-box-shadow:0 0 5px #333333;
   box-shadow: 0 0 5px #333333;
